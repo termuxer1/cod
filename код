@@ -1,0 +1,49 @@
+def main(s):
+    pass
+
+
+def val(s):
+    a = 0
+    b = 0
+    l = list(s)
+    fl = True
+    l1 = []
+    valid_value = 'IVXLCDM'
+    for i in range(len(l)):
+        if valid_value.find(l[i]) != -1:
+            pass
+        else:
+            fl = False
+
+    if fl:
+        for i in l:
+            if i == 'I':
+                l1.append(1)
+            elif i == 'V':
+                l1.append(5)
+            elif i == 'X':
+                l1.append(10)
+            elif i == 'L':
+                l1.append(50)
+            elif i == 'C':
+                l1.append(100)
+            elif i == 'D':
+                l1.append(500)
+            else:
+                l1.append(1000)
+            a = i
+            if a != 0:
+                if a == i:
+                    b += 1
+                else:
+                    b = 0
+            if b == 4:
+                fl = Fasle
+
+
+
+
+    if fl:
+        print(main(s))
+    else:
+        print(-1)
